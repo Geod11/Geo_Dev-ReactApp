@@ -4,10 +4,11 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);   
+    background-color: rgb(0, 0, 0);
+    color: gray;   
 }
 
-.Header-main-container {
+.Header-main-container { 
 background-color: rgb(0, 0, 0);
 display: flex;
 width: 90%;
@@ -19,7 +20,7 @@ position: relative;
     font-family: Audiowide;
     color: gray;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -31,7 +32,7 @@ position: relative;
 
 .Header-child-list:hover {
     color:green;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
 .Header-child-list:active {
