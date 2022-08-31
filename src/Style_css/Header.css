@@ -1,8 +1,47 @@
+@charset "UTF-8";
+@font-face {
+  font-family: KlaptArabic;
+  src: local("KlaptArabic-Light.ttf") url(C:UsersGeorgeAlexandruÞsktopReact_app_for_Netlify_testmy-react-app2src\f onts) format("sans");
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: gray;
+}
+
 .Header-main-container {
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 90%;
+  left: 5%;
+  position: relative;
 }
 
 .Header-main-list {
+  justify-content: space-evenly;
+  font-family: Audiowide;
+  color: gray;
+  list-style-type: none;
+  font-size: 30px;
   display: flex;
+  align-items: center;
+  width: 100%;
+}
 
+.Header-child-list {
+  cursor: pointer;
+}
+
+.Header-child-list:hover {
+  color: green;
+  font-weight: bolder;
+}
+
+.Header-child-list:active {
+  color: green;
+  font-weight: 700;
+  background-color: green;
+}
+
+.Logo {
+  cursor: pointer;
 }/*# sourceMappingURL=Header.css.map */

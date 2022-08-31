@@ -1,6 +1,6 @@
 @font-face {
-    font-family: KlaptArabic;
-    src: url(C:\Users\GeorgeAlexandru\Desktop\React_app_for_Netlify_test\my-react-app2\KlaptArabic\KlaptArabic-Light.ttf) format('sans-serif');
+    font-family: "KlaptArabic";
+    src: url(C:\Users\GeorgeAlexandru\Desktop\React_app_for_Netlify_test\my-react-app2\KlaptArabic\KlaptArabic-Light.ttf) format('sans');
 }
 
 .Footer-main-container {
@@ -12,10 +12,9 @@
 }
 
 .Footer-main-list {
-    font-family: KlaptArabic;
+    font-family: Audiowide; 
     display: block;
     list-style-type: none;
-    font-family: Audiowide;
     color: gray;
     font-size: 20px;
     align-items: left;

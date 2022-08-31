@@ -1,3 +1,22 @@
-body {
-    background-color: rgb(0, 0, 0);   
+@charset "UTF-8";
+@font-face {
+  font-family: "KlaptArabic";
+  src: url(C:UsersGeorgeAlexandruÞsktopReact_app_for_Netlify_testmy-react-app2KlaptArabicKlaptArabic-Light.ttf) format("sans");
 }
+.Footer-main-container {
+  display: flex;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  position: relative;
+}
+
+.Footer-main-list {
+  font-family: Audiowide;
+  display: block;
+  list-style-type: none;
+  color: gray;
+  font-size: 20px;
+  align-items: left;
+  justify-content: center;
+}/*# sourceMappingURL=Footer.css.map */
