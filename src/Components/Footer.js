@@ -7,7 +7,6 @@ return (
 <ul className="Footer-main-list">
 <li className="Footer-child-list">Contact Info</li>
 <li className="Footer-child-list">Phone Number: 000000000</li>
-<li className="Footer-child-list">   </li>
 <li className="Footer-child-list">Email address: dfsdfdfsd@dsfs.com</li>
 </ul>
 </div>

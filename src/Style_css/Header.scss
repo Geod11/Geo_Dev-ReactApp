@@ -1,6 +1,11 @@
 @font-face {
     font-family: KlaptArabic;
-    src: local('KlaptArabic-Light.ttf') url(C:\Users\GeorgeAlexandru\Desktop\React_app_for_Netlify_test\my-react-app2\src\Fonts) format('sans');
+    src: url("../Fonts/KlaptArabic-Light.ttf");
+    // @font-face {
+    //     font-family: myFirstFont;
+    //     src: url(sansation_bold.woff);
+    //     font-weight: bold;
+    //   }
 }
 
 body {
@@ -17,7 +22,8 @@ position: relative;
 }
 .Header-main-list {
     justify-content: space-evenly;
-    font-family: Audiowide;
+    //font-family: Audiowave; 
+    font-family: KlaptArabic;
     color: gray;
     list-style-type: none;
     font-size: 30px;

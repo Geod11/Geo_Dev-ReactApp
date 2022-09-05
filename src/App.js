@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import React, { useState } from 'react';
+import Clock from './Components/Clock';
 
 
 function App() {
@@ -24,6 +25,7 @@ function incrementCurrentState() {
       <button onClick={decrementCurrentState}>-</button>
       <span>{currentState}</span>
       <button onClick={incrementCurrentState}>+</button>
+      <Clock></Clock>
       <Footer/>
     </div>
   );
