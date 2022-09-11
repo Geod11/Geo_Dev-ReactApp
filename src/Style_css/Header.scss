@@ -28,7 +28,7 @@ position: relative;
     list-style-type: none;
     font-size: 30px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
 }
 
@@ -36,18 +36,15 @@ position: relative;
     cursor: pointer;
 }
 
+.Header-child-list:active {
+    color:green;
+}
+
 .Header-child-list:hover {
     color:green;
     font-weight: bolder;
 }
 
-.Header-child-list:active {
-    color:green;
-    font-weight: 700;
-    background-color: green;
-
-}
-
-.Logo {
-    cursor: pointer; 
-}
+// .Logo {
+//     cursor: pointer; 
+// }

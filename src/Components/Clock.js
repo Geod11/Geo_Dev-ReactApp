@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 function Clock() {
 
-    const [clockState, setClockstate] = useState();
+    const [clockState, setClockState] = useState();
 
 useEffect(() => {
   setInterval(() => {
   const date = new Date();
-//  setClockState(clockState => setClockState(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'})));
-setClockstate(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}));
+  setClockState(clockState => setClockState(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'})));
 }, 1000);
 }, []);
 
@@ -17,4 +16,4 @@ setClockstate(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'})
   )
 }
 
-export default Clock
+export default Clock 
