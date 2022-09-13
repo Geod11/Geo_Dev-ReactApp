@@ -1,5 +1,6 @@
-function Skills() {
-    return <div>Skills</div>
-}
 
-export default Skills
+export default function Skills() {
+    return (
+    <div>Skills page information</div>
+     )
+}

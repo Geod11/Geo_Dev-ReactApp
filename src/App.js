@@ -1,40 +1,66 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
+import NotFound from './Pages/NotFound';
 import Header from './Components/Header';
-//import Footer from './Components/Footer';
+import Footer from './Components/Footer';
 //import React, { useState } from 'react';
-// import Clock from './Components/Clock';
+import Clock from './Components/Clock';
 // import AboutPage from './Pages/About';
 import {
-  //BrowserRouter,
   Routes,
   Route,
-  // Link,
-  //NavLink
 } from "react-router-dom";
 
 
 function App() {
 
+  const [currentState , updateStateFunction] = useState(100)
+
+  function decrementCurrentState() {
+    updateStateFunction(previousCurrentState => previousCurrentState - 1)
+  }
+  
+  function incrementCurrentState() {
+    updateStateFunction(previousCurrentState => previousCurrentState + 1)
+  }
+
   return (
+    
    <>
-   <Header />
    <div className='container'>
-      <Routes>
-      <Route path="/About" element={<About />} />
-      <Route path="/Projects" element={<Projects />} />
-      <Route path="/" element={<Home />} />
-      </Routes>
+       
+       <Header />
+       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
+       </Routes>
+      
+       
+      <h2>Add or subtract:</h2>
+      <button onClick={decrementCurrentState}>-</button>
+      <span>{currentState}</span>
+      <button onClick={incrementCurrentState}>+</button>
 
-    </div>
+   </div>
+    <Clock />
+    <Footer />
    </>
+   
+  );
 
-);
+  
+
+
+
         /* <Routes>
           <Route path="/About">
             <About />
@@ -77,15 +103,7 @@ function App() {
 
 
 
-// const [currentState , updateStateFunction] = useState(100)
 
-// function decrementCurrentState() {
-//   updateStateFunction(previousCurrentState => previousCurrentState - 1)
-// }
-
-// function incrementCurrentState() {
-//   updateStateFunction(previousCurrentState => previousCurrentState + 1)
-// }
 
       /* <Header/>
       <h1>Add or subtract:

@@ -1,8 +1,5 @@
-function Contact() {
+import React from "react";
 
-    const Contact = "Contact Page";
-
-    return (<div>{Contact}</div>)
+export default function Contact() {
+    return <div>Contact Page Information</div>
 }
-
-export default Contact

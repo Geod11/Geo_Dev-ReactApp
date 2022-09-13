@@ -1,5 +1,5 @@
-function Projects() {
-    return <div>Projects</div>
-}
+import React from "react";
 
-export default Projects
+export default function Projects() {
+    return <div>Projects Page Information</div>
+}
