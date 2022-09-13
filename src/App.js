@@ -50,7 +50,7 @@ function App() {
       <span>{currentState}</span>
       <button onClick={incrementCurrentState}>+</button>
 
-   </div>
+  </div>
     <Clock />
     <Footer />
    </>
