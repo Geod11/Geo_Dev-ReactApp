@@ -1,4 +1,4 @@
-import './App.css';
+//import './App.css';
 import React, { useState } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -8,14 +8,8 @@ import Projects from './Pages/Projects';
 import NotFound from './Pages/NotFound';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-//import React, { useState } from 'react';
 import Clock from './Components/Clock';
-// import AboutPage from './Pages/About';
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
@@ -30,10 +24,9 @@ function App() {
   }
 
   return (
-    
    <>
    <div className='container'>
-       
+    
        <Header />
        <Routes>
         <Route path="/" element={<Home />} />
@@ -44,7 +37,6 @@ function App() {
         <Route path="/*" element={<NotFound />} />
        </Routes>
       
-       
       <h2>Add or subtract:</h2>
       <button onClick={decrementCurrentState}>-</button>
       <span>{currentState}</span>
@@ -53,8 +45,7 @@ function App() {
   </div>
     <Clock />
     <Footer />
-   </>
-   
+   </>  
   );
 
   

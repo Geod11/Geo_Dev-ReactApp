@@ -1,11 +1,6 @@
 @font-face {
     font-family: KlaptArabic;
     src: url("../Fonts/KlaptArabic-Light.ttf");
-    // @font-face {
-    //     font-family: myFirstFont;
-    //     src: url(sansation_bold.woff);
-    //     font-weight: bold;
-    //   }
 }
 
 body {
@@ -32,19 +27,40 @@ position: relative;
     width: 100%;
 }
 
-.Header-child-list {
+.Header-child-list-link {
     cursor: pointer;
 }
 
-.Header-child-list:active {
-    color:green;
-    font-weight: bolder;
+.Header-child-list-link:link {
+    color:green;   
+    text-decoration: none;
 }
 
-.Header-child-list:hover {
+.Header-child-list-link:visited {
     color:green;
     font-weight: bolder;
+    text-decoration: none;
 }
+
+.Header-child-list-link:active {
+    color:green;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.Header-child-list-link:hover {
+    color:green;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.Header-child-list-link:focus {
+    color:green;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 1px 1px green;
+}
+
 
 // .Logo {
 //     cursor: pointer; 
