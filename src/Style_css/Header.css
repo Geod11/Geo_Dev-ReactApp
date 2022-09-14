@@ -1,7 +1,6 @@
-@charset "UTF-8";
 @font-face {
   font-family: KlaptArabic;
-  src: local("KlaptArabic-Light.ttf") url(C:UsersGeorgeAlexandruÞsktopReact_app_for_Netlify_testmy-react-app2src\f onts) format("sans");
+  src: url("../Fonts/KlaptArabic-Light.ttf");
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -18,30 +17,52 @@ body {
 
 .Header-main-list {
   justify-content: space-evenly;
-  font-family: Audiowide;
+  font-family: KlaptArabic;
   color: gray;
   list-style-type: none;
   font-size: 30px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
 }
 
-.Header-child-list {
+.Header-child-list-link {
   cursor: pointer;
 }
 
-.Header-child-list:hover {
+.Header-child-list-link:link {
+  color: green;
+  text-decoration: none;
+}
+
+.Header-child-list-link:visited {
   color: green;
   font-weight: bolder;
+  text-decoration: none;
 }
 
-.Header-child-list:active {
+.Header-child-list-link:active {
   color: green;
-  font-weight: 700;
-  background-color: green;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
-.Logo {
-  cursor: pointer;
+.Header-child-list-link:hover {
+  color: green;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.Header-child-list-link:focus {
+  color: green;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 1px 1px green;
+}
+
+.Header-main-list .active {
+  color: green;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 1px 1px green;
 }/*# sourceMappingURL=Header.css.map */

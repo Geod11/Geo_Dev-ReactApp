@@ -1,5 +1,6 @@
 import React from "react";
+import "../Style_css/Contact.scss"
 
 export default function Contact() {
-    return <div>Contact Page Information</div>
+    return <div className="contactPageContent">Contact Page Information</div>
 }

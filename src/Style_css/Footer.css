@@ -1,9 +1,7 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "KlaptArabic";
-  src: url(C:UsersGeorgeAlexandruÞsktopReact_app_for_Netlify_testmy-react-app2KlaptArabicKlaptArabic-Light.ttf) format("sans");
+  font-family: Audiowide;
+  src: url("../Fonts/Audiowide-Regular.ttf");
 }
-
 .Footer-main-container {
   display: flex;
   position: relative;
@@ -13,12 +11,12 @@
 }
 
 .Footer-main-list {
-  /*font-family: Audiowide;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Audiowide;
   display: flex;
   list-style-type: none;
   color: gray;
   font-size: 20px;
-  align-items: left;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
 }/*# sourceMappingURL=Footer.css.map */
