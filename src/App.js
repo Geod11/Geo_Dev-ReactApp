@@ -11,7 +11,7 @@ import Footer from './Components/Footer';
 import Clock from './Components/Clock';
 import { Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
 
   const [currentState , updateStateFunction] = useState(100)
 
@@ -129,4 +129,4 @@ function App() {
 </> */
 
 
-export default App;
+//export default App;
