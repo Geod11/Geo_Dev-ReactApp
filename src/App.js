@@ -1,5 +1,5 @@
 //import './App.css';
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -8,24 +8,24 @@ import Projects from './Pages/Projects';
 import NotFound from './Pages/NotFound';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Clock from './Components/Clock';
+//import Clock from './Components/Clock';
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
 
-  const [currentState , updateStateFunction] = useState(100)
+  // const [currentState , updateStateFunction] = useState(100)
 
-  function decrementCurrentState() {
-    updateStateFunction(previousCurrentState => previousCurrentState - 1)
-  }
+  // function decrementCurrentState() {
+  //   updateStateFunction(previousCurrentState => previousCurrentState - 1)
+  // }
   
-  function incrementCurrentState() {
-    updateStateFunction(previousCurrentState => previousCurrentState + 1)
-  }
+  // function incrementCurrentState() {
+  //   updateStateFunction(previousCurrentState => previousCurrentState + 1)
+  // }
 
   return (
    <>
-   <div className='container'>
+   <div>
     
        <Header />
        <Routes>
@@ -36,14 +36,12 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
        </Routes>
-      
-      <h2>Add or subtract:</h2>
+  </div>
+  {/* <h2>Add or subtract:</h2>
       <button onClick={decrementCurrentState}>-</button>
       <span>{currentState}</span>
       <button onClick={incrementCurrentState}>+</button>
-
-  </div>
-    <Clock />
+    <Clock /> */}
     <Footer />
    </>  
   );
