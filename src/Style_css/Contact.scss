@@ -12,4 +12,35 @@
     font-family: KlaptArabic;
     font-weight: bolder;
     text-align: center;
+    background-color: black;
+    color: green;
+    border-color: green;
+    
 }
+
+.formWord {
+label { 
+    vertical-align: top;
+    margin-right: 0.5em;
+}
+
+textarea {
+    font-family: KlaptArabic;
+    font-weight: bolder;
+    background-color: black;
+    color: green;
+    border-color: green;
+}
+
+button {
+    background-color: black;
+    color: green;
+    border-color: green;
+    vertical-align: top;
+    margin-left: 0.5em;
+}
+}
+
+// input[type=text]:focus {
+//     background-color: green;
+//   }

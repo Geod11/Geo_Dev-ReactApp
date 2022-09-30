@@ -1,29 +1,40 @@
-import React/*, { useState } */ from "react";
-import "../Style_css/Contact.scss"
+import React, { useRef }/*, { useState } */ from "react";
+import "../Style_css/Contact.scss";
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
 
     // function MyForm() {
     //     const [name, setName] = useState("");}
 
+     function sendEmail(e) {
+        // const form = useRef();
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'service_bd9rsvc', /*form.current*/ e.target, '2DEifTVyVNAAoXmob')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+    }
+
     return (
         <>
          <div className="contactPageContent">
-          <form action="" onSubmit={""}>
+          <form action="" onSubmit={sendEmail}>
+          <h2>Hello, nice to meet you!</h2>
            <div className="formWord">
-            <h2>Hello, pleasure to meet you!</h2>
             <br />
-            <label>Name:
-            <input className="input100" type="text"  name="fullName" required/>
+            <label>Name:</label>
+            <input className="input100" type="text" name="name" required/>
             <br />
-            </label>Phone:        
-            <label>
+            <label>Phone:</label>        
             <input className="input100" type="text" name="phone" required/>
-            </label>
             <br />
-            <label>Email:
-            <input className="input100" type="text" name="phone" required/>
-            </label>            
+            <label>Email:</label>
+            <input className="input100" type="text" name="phone" required/>       
            </div>
           </form> 
             
