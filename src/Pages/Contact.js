@@ -23,26 +23,24 @@ export default function Contact() {
     return (
         <>
          <div className="contactPageContent">
+         <h2>Hello, nice to meet you!</h2>
           <form action="" onSubmit={sendEmail}>
-          <h2>Hello, nice to meet you!</h2>
-           <div className="formWord">
+           <div className="formWord">  
+            <input className="input100" type="text" placeholder="Name:" name="name" required/>
+            <br />   
+            <input className="input100" type="text" placeholder="Phone:" name="phone" required/>
             <br />
-            <label>Name:</label>
-            <input className="input100" type="text" name="name" required/>
-            <br />
-            <label>Phone:</label>        
-            <input className="input100" type="text" name="phone" required/>
-            <br />
-            <label>Email:</label>
-            <input className="input100" type="text" name="phone" required/>       
+            <input className="input100" type="text" placeholder="Email:" name="email" required/>       
            </div>
           </form> 
-            
-          <div class="formWord">
-           <label>Message:</label>
-           <textarea name="message" required rows="4" cols="50"></textarea>
-           <button>SUBMIT</button>
-          </div>    
+           <br />
+          <div class="formWord2">
+           
+           <textarea name="message" placeholder="Message content:" required rows="4" cols="50"></textarea>
+           
+          </div>  
+          <br />  
+          <button>SUBMIT</button>
          </div>  
         </>
 )}
