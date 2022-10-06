@@ -8,12 +8,17 @@ body {
     color: gray;   
 }
 
+.Logo {
+    width: 10%;
+}
+
 .Header-main-container { 
 background-color: rgb(0, 0, 0);
 display: flex;
 width: 90%;
 left: 5%;
-position: relative;
+position: fixed;
+top: 0;
 }
 .Header-main-list {
     justify-content: space-evenly;
@@ -24,7 +29,7 @@ position: relative;
     font-size: 2vw;
     display: flex;
     align-items: stretch;
-    width: 100%;
+    width: 90%;
 }
 
 .Header-child-list-link {
