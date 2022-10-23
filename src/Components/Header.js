@@ -5,8 +5,9 @@ export default function Header () {
 return (
 
     <div className="Header-main-container">
-        <img className="Logo" src="Geo_Dev.ico" alt="Logo" width={120}></img>
+        {/* <img className="Logo" src="Geo_Dev.ico" alt="Logo" width={120}></img> */}
         <ul className="Header-main-list">
+            <li><img className="Logo" src="Geo_Dev.ico" alt="Logo" width={70}></img></li>
             <li><NavLink className="Header-child-list-link" to="/" >Home</NavLink></li>
             <li><NavLink className="Header-child-list-link" to="/about">About</NavLink></li>
             <li><NavLink className="Header-child-list-link" to="/projects" index={true} >Projects</NavLink></li>

@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 //import React, { useState } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -25,8 +25,6 @@ export default function App() {
 
   return (
    <>
-   <div>
-    
        <Header />
        <Routes>
         <Route path="/" element={<Home />} />
@@ -36,7 +34,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
        </Routes>
-  </div>
   {/* <h2>Add or subtract:</h2>
       <button onClick={decrementCurrentState}>-</button>
       <span>{currentState}</span>

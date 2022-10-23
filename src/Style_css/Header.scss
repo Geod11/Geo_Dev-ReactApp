@@ -8,29 +8,30 @@ body {
     color: gray;   
 }
 
-.Logo {
-    width: 10%;
-}
+// .Logo {
+//     width: 10%;
+// }
 
 .Header-main-container { 
-background-color: rgb(0, 0, 0);
+// flex: 1;
 display: flex;
-width: 90%;
-left: 5%;
-position: fixed;
-top: 0;
+max-height: 70px;
+font-size: 150%;
 }
+
 .Header-main-list {
-    justify-content: space-evenly;
-    //font-family: Audiowave; 
     font-family: KlaptArabic;
-    color: gray;
-    list-style-type: none;
-    font-size: 2vw;
     display: flex;
-    align-items: stretch;
-    width: 90%;
+    list-style-type: none;
+    color: gray;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    padding-left: 0%;
+    margin-left: 0%;
+    //flex: 1;
 }
+
 
 .Header-child-list-link {
     cursor: pointer;
