@@ -55,14 +55,15 @@
     }
 
     .emailSentBase {
-        background-color: aliceblue;
+        background-color: black;
         position: relative;
         // left: -100vw;
         opacity: 0;
-        transition: 1s;
+        transition: 2s;
 }
     .emailSent {
-        background-color: blueviolet;
+        font-weight: bolder;
+        background-color: black;
         // left: 0;
         opacity: 1;
     }
