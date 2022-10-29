@@ -1,53 +1,48 @@
-import './App.css';
+import "./App.css"; //iport 'style.css'; after refactor
 //import React, { useState } from 'react';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Skills from './Pages/Skills';
-import Projects from './Pages/Projects';
-import NotFound from './Pages/NotFound';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Skills from "./Pages/Skills";
+import Projects from "./Pages/Projects";
+import NotFound from "./Pages/NotFound";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 //import Clock from './Components/Clock';
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
-
   // const [currentState , updateStateFunction] = useState(100)
 
   // function decrementCurrentState() {
   //   updateStateFunction(previousCurrentState => previousCurrentState - 1)
   // }
-  
+
   // function incrementCurrentState() {
   //   updateStateFunction(previousCurrentState => previousCurrentState + 1)
   // }
 
   return (
-   <>
-       <Header />
-       <Routes>
+    <>
+      <Header />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
-       </Routes>
-  {/* <h2>Add or subtract:</h2>
+      </Routes>
+      {/* <h2>Add or subtract:</h2>
       <button onClick={decrementCurrentState}>-</button>
       <span>{currentState}</span>
       <button onClick={incrementCurrentState}>+</button>
     <Clock /> */}
-    <Footer />
-   </>  
+      <Footer />
+    </>
   );
 
-  
-
-
-
-        /* <Routes>
+  /* <Routes>
           <Route path="/About">
             <About />
           </Route>
@@ -64,7 +59,6 @@ export default function App() {
             <Home />
           </Route>
         </Routes> */
-  
 
   // function Home() {
   //   return <h2>Home</h2>;
@@ -85,13 +79,9 @@ export default function App() {
   // function Contact() {
   //   return <h2>Contact</h2>;
   // }
-} 
+}
 
-
-
-
-
-      /* <Header/>
+/* <Header/>
       <h1>Add or subtract:
       </h1>
       <button onClick={decrementCurrentState}>-</button>
@@ -99,7 +89,6 @@ export default function App() {
       <button onClick={incrementCurrentState}>+</button>
       <Clock></Clock>
 <Footer/>*/
-
 
 /* <>
 <nav>
@@ -122,6 +111,5 @@ export default function App() {
      </ul>
 </nav>
 </> */
-
 
 //export default App;

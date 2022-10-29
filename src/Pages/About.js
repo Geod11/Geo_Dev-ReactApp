@@ -1,5 +1,12 @@
-import '../Style_css/About.scss'
+import styled from "styled-components";
 
 export default function About() {
-    return <div className="aboutPageContent">About Page information</div>
+  return <Wrapper>About Page information</Wrapper>;
 }
+
+const Wrapper = styled.div`
+  color: green;
+  background-color: black;
+  width: 100%;
+  height: 61vh;
+`;

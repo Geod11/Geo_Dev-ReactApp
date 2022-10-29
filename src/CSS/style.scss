@@ -1,0 +1,17 @@
+@import "../CSS/Contact", "../CSS/About", "../CSS/Footer", "../CSS/Header",
+  "../CSS/Home", "../CSS/NotFound", "../CSS/Projects", "../CSS/Skills",
+  "../CSS/Variable";
+
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: KlaptArabic;
+  src: url("../Fonts/KlaptArabic-Light.ttf");
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: gray;
+}
