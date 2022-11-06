@@ -1,44 +1,40 @@
-import "./App.css"; //iport 'style.css'; after refactor
-//import React, { useState } from 'react';
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Skills from "./Pages/Skills";
-import Projects from "./Pages/Projects";
-import NotFound from "./Pages/NotFound";
+import "./App.css";
+import React, { useState } from "react";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Contact from "./Components/Pages/Contact";
+import Skills from "./Components/Pages/Skills";
+import Projects from "./Components/Pages/Projects";
+import NotFound from "./Components/Pages/NotFound";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-//import Clock from './Components/Clock';
+//import Test from "./Components/Pages/Test";
+import { ThemeProvider } from "styled-components";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
-  // const [currentState , updateStateFunction] = useState(100)
-
-  // function decrementCurrentState() {
-  //   updateStateFunction(previousCurrentState => previousCurrentState - 1)
-  // }
-
-  // function incrementCurrentState() {
-  //   updateStateFunction(previousCurrentState => previousCurrentState + 1)
-  // }
+  const Theme = {
+    colors: {
+      green: "#008000",
+      gray: "#808080",
+    },
+  };
 
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/*" element={<NotFound />} />
-      </Routes>
-      {/* <h2>Add or subtract:</h2>
-      <button onClick={decrementCurrentState}>-</button>
-      <span>{currentState}</span>
-      <button onClick={incrementCurrentState}>+</button>
-    <Clock /> */}
-      <Footer />
+      <ThemeProvider theme={Theme}>
+        <Header />
+        {/* <Test /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </ThemeProvider>
     </>
   );
 

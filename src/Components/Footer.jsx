@@ -1,6 +1,8 @@
-function Footer() {
+import styled from "styled-components";
+
+export default function Footer() {
   return (
-    <div className="Footer-main-container">
+    <FooterMainContainer>
       <ul className="Footer-main-list">
         <li className="Footer-child-list">Contact Info</li>
         <li className="Footer-child-list">
@@ -36,8 +38,49 @@ function Footer() {
           Email address: georgedanilescu88@gmail.com
         </li>
       </ul>
-    </div>
+    </FooterMainContainer>
   );
 }
 
-export default Footer;
+const FooterMainContainer = styled.div`
+  @font-face {
+    font-family: Audiowide;
+    src: url("../Fonts/Audiowide-Regular.ttf");
+  }
+
+  max-height: 100px;
+
+  .Footer-main-list {
+    font-family: Audiowide;
+    display: flex;
+    list-style-type: none;
+    color: gray;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .LogoFooterLI .LogoFooterGit {
+    cursor: pointer;
+  }
+
+  @media all and (min-width: 1000px) {
+    .Footer-main-container {
+      //flex: 1;
+      max-height: 100px;
+    }
+
+    .Footer-main-list {
+      font-family: Audiowide;
+      display: flex;
+      list-style-type: none;
+      color: gray;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding-left: 0%;
+    }
+  }
+`;
+

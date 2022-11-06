@@ -1,6 +1,8 @@
+import styled from "styled-components";
+
 export default function Home() {
   return (
-    <div className="homePageContent">
+    <HomePageContent>
       Hello,
       <br />I am George,
       <br />
@@ -43,6 +45,16 @@ export default function Home() {
       More text
       <br />
       More text
-    </div>
+    </HomePageContent>
   );
 }
+
+const HomePageContent = styled.div`
+  flex: 1;
+  color: gray;
+  background-color: black;
+  font-family: KlaptArabic;
+  text-align: center;
+  font-size: 1.5vw;
+  vertical-align: middle;
+`;

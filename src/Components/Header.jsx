@@ -57,7 +57,7 @@ const HeaderMainContainer = styled.div`
     font-family: KlaptArabic;
     display: flex;
     list-style-type: none;
-    color: gray;
+    color: #808080;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -67,7 +67,7 @@ const HeaderMainContainer = styled.div`
     li {
       cursor: pointer;
       &:link {
-        color: green;
+        color: #008000;
         text-decoration: none;
       }
       &:active,
@@ -85,7 +85,8 @@ const HeaderMainContainer = styled.div`
       }
 
       a {
-        color: green;
+        /* color: green; */
+        color: ${p => p.theme.colors.green}; 
         text-decoration: none;
         text-shadow: 1px 1px green;
       }
@@ -105,4 +106,4 @@ const HeaderMainContainer = styled.div`
   }
 `;
 
-const HeaderLink = styled.a``;
+//const HeaderLink = styled.a``;

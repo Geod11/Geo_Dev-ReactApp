@@ -1,5 +1,6 @@
 import React, { useRef, useState /*, { useState } */ } from "react";
 import emailjs from "emailjs-com";
+import styled from "styled-components";
 
 export default function Contact() {
   const [mailSent, isMailSent] = useState(false);
@@ -31,7 +32,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="contactPageContent">
+      <ContactPageContent active={true}>
         <h2>Hello, nice to meet you!</h2>
         <form ref={form} action="" onSubmit={sendEmail}>
           <div className="formWord">
@@ -75,7 +76,75 @@ export default function Contact() {
           {" "}
           Email sent successfully!{" "}
         </div>
-      </div>
+      </ContactPageContent>
     </>
   );
 }
+
+const ContactPageContent = styled.div`
+  background-color: black;
+  color: green;
+  font-family: KlaptArabic;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw;
+  font-size: 2vmin;
+
+  color: ${(p) => (p.active ? "#2488eb" : "white")};
+
+  textarea {
+    background-color: inherit;
+    border-color: green;
+    color: green;
+    font-family: KlaptArabic;
+    font-weight: bolder;
+    height: 25vh;
+    width: 70vmin;
+    font-size: 2vmin;
+  }
+
+  .submitButton {
+    margin-top: 15px;
+  }
+
+  input {
+    font-family: KlaptArabic;
+    font-weight: bolder;
+    text-align: center;
+    background-color: black;
+    color: green;
+    border-color: green;
+    margin-bottom: 1em;
+    height: 5vh;
+    width: 15%;
+    font-size: 2vmin;
+    &:invalid {
+      color: red !important;
+      font-weight: bolder;
+    }
+    .submitButton {
+      height: 5vh;
+      width: 10%;
+      font-size: 2vmin;
+    }
+  }
+
+  .formWord {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .emailSentBase {
+    background-color: black;
+    position: relative;
+    opacity: 0;
+    transition: 2s;
+  }
+  .emailSent {
+    font-weight: bolder;
+    background-color: black;
+    opacity: 1;
+  }
+`;
