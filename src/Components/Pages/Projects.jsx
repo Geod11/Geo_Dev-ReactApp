@@ -20,8 +20,8 @@ const ProjectsPageContent = styled.div`
   height: 100%;
 `;
 
-const IndividualCard = styled.div`
-  display: flex;
-  float: inline;
-  justify-content: space-evenly;
-`;
+// const IndividualCard = styled.div`
+//   display: flex;
+//   float: inline;
+//   justify-content: space-evenly;
+// `;
