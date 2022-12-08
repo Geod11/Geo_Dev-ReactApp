@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import Car from "../Car";
-import Phone from "../Phone";
-import { cars, phones } from "../Data";
+// import Car from "../Car";
+// import Phone from "../Phone";
+// import { cars, phones } from "../Data";
+import NewsContainer from "./NewsContainer";
+import IndividualNewsContainer from "./NewsContainer";
 
 export default function Projects() {
   return (
     <>
       <ProjectsPageContent>
-        <IndividualCard>
+        {/* <IndividualCard>
           {cars.map((car, index) => {
             return (
               <Car
@@ -18,8 +20,8 @@ export default function Projects() {
               />
             );
           })}
-        </IndividualCard>
-        {phones.map((phone, index) => {
+        </IndividualCard> */}
+        {/* {phones.map((phone, index) => {
           return (
             <Phone
               key={phone.id}
@@ -28,7 +30,9 @@ export default function Projects() {
               phoneColor={phone.phoneColor}
             />
           );
-        })}
+        })} */}
+        <IndividualNewsContainer />
+        <NewsContainer />
       </ProjectsPageContent>
     </>
   );
@@ -41,8 +45,8 @@ const ProjectsPageContent = styled.div`
   height: 100%;
 `;
 
-const IndividualCard = styled.div`
-  display: flex;
-  float: inline;
-  justify-content: space-evenly;
-`;
+// const IndividualCard = styled.div`
+//   display: flex;
+//   float: inline;
+//   justify-content: space-evenly;
+// `;
