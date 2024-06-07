@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <HomePageContent>
  
-<Title>Welcome to my spot on the web</Title>
+<Title>Welcome to my spot on the web!</Title>
       
       <br />
       Hello! I'm George, a passionate and dedicated Front-End Developer with a flair for creating dynamic, user-friendly web experiences. My portfolio showcases a blend of technical expertise, creativity, and a commitment to delivering exceptional digital solutions.
@@ -35,7 +35,7 @@ export default function Home() {
 
 const HomePageContent = styled.div`
   flex: 1;
-  color: gray;
+  color: white;
   background-color: black;
   font-family: KlaptArabic;
   text-align: left;
