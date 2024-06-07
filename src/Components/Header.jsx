@@ -123,12 +123,11 @@ const HeaderMainContainer = styled.div`
 
 const LogoImage = styled.img`
           width: 120px;
-          height: 120px;
-        padding-left: 30px;
+          height: 120px;      
 `
 const HamburgerMenuIcon = styled.a`
   color: green;
-  padding: 30px 30px 0px 0px;
+  padding: 20px 20px 0px 0px;
 
   .icon {
     height: 120px;
@@ -137,7 +136,7 @@ const HamburgerMenuIcon = styled.a`
   }
 
   .fa {
-    font-size: 50px;
+    font-size: 40px;
     @media (min-width:768px){
     display:none;
     }
