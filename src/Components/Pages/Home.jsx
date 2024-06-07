@@ -5,7 +5,7 @@ export default function Home() {
     <HomePageContent>
  
 <Title>Welcome to my spot on the web</Title>
-      <br />
+      
       <br />
       Hello! I'm George, a passionate and dedicated Front-End Developer with a flair for creating dynamic, user-friendly web experiences. My portfolio showcases a blend of technical expertise, creativity, and a commitment to delivering exceptional digital solutions.
       <br />
@@ -39,13 +39,14 @@ const HomePageContent = styled.div`
   background-color: black;
   font-family: KlaptArabic;
   text-align: left;
-  font-size: 2vw;
+  font-size: 3.5vw;
   vertical-align: middle;
   padding: 20px;
   font-weight: 500;
 `;
 
 const Title = styled.h4`
-  font-size: 3.5vw;
+  font-size: 4vw;
   text-align: center;
+  font-weight: 900;
 `
