@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <FooterMainContainer>
       <ul className="Footer-main-list">
-        <li className="Footer-child-list">Contact Info</li>
+        {/* <li className="Footer-child-list">Contact Info</li> */}
         <li className="Footer-child-list">
           <a
             href="https://www.linkedin.com/in/george-alexandru-danilescu-6b6aa456"
@@ -33,9 +33,9 @@ export default function Footer() {
             ></img>
           </a>
         </li>
-        <li className="Footer-child-list">Phone Number: +34 644 302 652</li>
+        <li className="Footer-child-list">Phone: +40752675068</li>
         <li className="Footer-child-list">
-          Email address: georgedanilescu88@gmail.com
+          Email: georgedanilescu88@gmail.com
         </li>
       </ul>
     </FooterMainContainer>
@@ -46,6 +46,7 @@ const FooterMainContainer = styled.div`
   @font-face {
     font-family: Audiowide;
     src: url("../Fonts/Audiowide-Regular.ttf");
+    
   }
 
   max-height: 100px;
@@ -65,13 +66,12 @@ const FooterMainContainer = styled.div`
     cursor: pointer;
   }
 
-  @media all and (min-width: 1000px) {
+  /* @media all and (min-width: 1000px) {
     .Footer-main-container {
-      //flex: 1;
       max-height: 100px;
-    }
+    } */
 
-    .Footer-main-list {
+    /* .Footer-main-list {
       font-family: Audiowide;
       display: flex;
       list-style-type: none;
@@ -80,7 +80,19 @@ const FooterMainContainer = styled.div`
       align-items: center;
       width: 100%;
       padding-left: 0%;
+    } */
+  
+    .Footer-child-list {
+      padding: 5px;
     }
+
+  li {
+    @media (max-width: 768px){
+        font-size: 10px;
+      }
+      
   }
+
+
 `;
 

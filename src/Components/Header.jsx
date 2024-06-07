@@ -2,18 +2,23 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 
+
 export default function Header() {
 
   return (
     <>
       <HeaderMainContainer>
+      <LogoImage
+              src="Geo_Dev.ico"
+              alt="George's developer logo"             
+            ></LogoImage>
         <ul>
-          <li>
+          {/* <li>
             <img
               src="Geo_Dev.ico"
               alt="George's developer logo"             
             ></img>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/">
               Home
@@ -43,17 +48,27 @@ export default function Header() {
             </NavLink>
           </li>
         </ul>
+        <HamburgerMenuIcon href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </HamburgerMenuIcon>
       </HeaderMainContainer>
     </>
   );
 }
 
 const HeaderMainContainer = styled.div`
+
   display: flex;
-  max-height: 90px;
+  max-height: 120px;
   font-size: 180%;
 
   ul {
+
+    @media (max-width: 768px) {
+      overflow: hidden;
+      position: relative;
+    }
+
     font-family: KlaptArabic;
     display: flex;
     list-style-type: none;
@@ -65,6 +80,11 @@ const HeaderMainContainer = styled.div`
     margin-left: 0%;
 
     li {
+
+      @media (max-width: 768px) {
+      display:none;
+    }
+
       cursor: pointer;
       &:link {
         color: #008000;
@@ -97,13 +117,29 @@ const HeaderMainContainer = styled.div`
         text-decoration: none;
         text-shadow: 1px 1px green;
       }
-
-      img {
-        width: 120px;
-      }
-
     }
   }
 `;
 
-//const HeaderLink = styled.a``;
+const LogoImage = styled.img`
+          width: 120px;
+          height: 120px;
+        padding-left: 30px;
+`
+const HamburgerMenuIcon = styled.a`
+  color: green;
+  padding: 30px 30px 0px 0px;
+
+  .icon {
+    height: 120px;
+    width: 120px;
+    font-size: 100px;
+  }
+
+  .fa {
+    font-size: 50px;
+    @media (min-width:768px){
+    display:none;
+    }
+  }
+`

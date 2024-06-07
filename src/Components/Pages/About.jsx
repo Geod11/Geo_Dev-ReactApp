@@ -1,7 +1,7 @@
 import styled from "styled-components";
 //import { TabSwitcher } from "../TabSwitcher";
 //import { type } from "@testing-library/user-event/dist/type";
-import React, { useState } from "react";
+import React from "react";
 
 //export type ButtonType = "leftside" | "rightside";
 
