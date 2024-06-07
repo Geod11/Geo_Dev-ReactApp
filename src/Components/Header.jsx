@@ -8,10 +8,12 @@ export default function Header() {
   return (
     <>
       <HeaderMainContainer>
+      <NavLink to="/">
       <LogoImage
-              src="Geo_Dev.ico"
+              src="SimpleLeaf.ico"
               alt="George's developer logo"             
             ></LogoImage>
+            </NavLink>
         <ul>
           {/* <li>
             <img
@@ -19,11 +21,11 @@ export default function Header() {
               alt="George's developer logo"             
             ></img>
           </li> */}
-          <li>
+          {/* <li>
             <NavLink to="/">
-              Home
+            Home
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink  to="/about">
               About
@@ -80,10 +82,10 @@ const HeaderMainContainer = styled.div`
     margin-left: 0%;
 
     li {
-
       @media (max-width: 768px) {
       display:none;
     }
+
 
       cursor: pointer;
       &:link {
@@ -122,8 +124,9 @@ const HeaderMainContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-          width: 120px;
-          height: 120px;      
+          max-width: 120px;
+          max-height: 70px;  
+          padding-top: 10px;    
 `
 const HamburgerMenuIcon = styled.a`
   color: green;
@@ -137,7 +140,7 @@ const HamburgerMenuIcon = styled.a`
 
   .fa {
     font-size: 40px;
-    @media (min-width:768px){
+    @media (min-width: 769px){
     display:none;
     }
   }

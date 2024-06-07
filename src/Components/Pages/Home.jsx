@@ -39,14 +39,14 @@ const HomePageContent = styled.div`
   background-color: black;
   font-family: KlaptArabic;
   text-align: left;
-  font-size: 3.5vw;
+  font-size: 20px;
   vertical-align: middle;
   padding: 20px;
   font-weight: 500;
 `;
 
 const Title = styled.h4`
-  font-size: 4vw;
+  font-size: 35px;
   text-align: center;
   font-weight: 900;
 `
