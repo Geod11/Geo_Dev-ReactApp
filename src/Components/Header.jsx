@@ -14,7 +14,7 @@ export default function Header() {
               alt="George's developer logo"             
             ></LogoImage>
             </NavLink>
-        <ul>
+        <ul id="myLinks">
           {/* <li>
             <img
               src="Geo_Dev.ico"
@@ -26,11 +26,12 @@ export default function Header() {
             Home
             </NavLink>
           </li> */}
-          <li>
-            <NavLink  to="/about">
+          {/* <li>
+            <NavLink  
+              to="/about">
               About
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink              
               to="/projects"
@@ -56,6 +57,15 @@ export default function Header() {
       </HeaderMainContainer>
     </>
   );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 const HeaderMainContainer = styled.div`
@@ -120,6 +130,15 @@ const HeaderMainContainer = styled.div`
         text-shadow: 1px 1px green;
       }
     }
+
+    .icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
   }
 `;
 
@@ -130,7 +149,7 @@ const LogoImage = styled.img`
 `
 const HamburgerMenuIcon = styled.a`
   color: green;
-  padding: 20px 20px 0px 0px;
+  padding: 20px 30px 0px 30px;
 
   .icon {
     height: 120px;
@@ -144,4 +163,6 @@ const HamburgerMenuIcon = styled.a`
     display:none;
     }
   }
+
+
 `

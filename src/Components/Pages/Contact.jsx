@@ -91,7 +91,11 @@ const ContactPageContent = styled.div`
   width: 100vw;
   font-size: 2vmin;
 
-  color: ${(p) => (p.active ? "#2488eb" : "white")};
+  color: ${(p) => (p.active ? "white" : "green")};
+
+h2 {
+  padding-bottom: 30px;
+}
 
   textarea {
     background-color: inherit;

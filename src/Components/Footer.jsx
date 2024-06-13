@@ -21,7 +21,7 @@ export default function Footer() {
         </li>
         <li className="Footer-child-list">
           <a
-            href="https://github.com/Danilestii"
+            href="https://github.com/Geod11"
             target="_blank"
             rel="noopener noreferrer"
           >
