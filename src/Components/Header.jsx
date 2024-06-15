@@ -5,6 +5,18 @@ import styled from "styled-components";
 
 export default function Header() {
 
+  function myFunction() {
+    console.log("sdasdasd");
+    var x = document.getElementById("myLinks");
+    if (!x) return
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+    console.log(x);
+  }
+
   return (
     <>
       <HeaderMainContainer>
@@ -15,23 +27,6 @@ export default function Header() {
             ></LogoImage>
             </NavLink>
         <ul id="myLinks">
-          {/* <li>
-            <img
-              src="Geo_Dev.ico"
-              alt="George's developer logo"             
-            ></img>
-          </li> */}
-          {/* <li>
-            <NavLink to="/">
-            Home
-            </NavLink>
-          </li> */}
-          {/* <li>
-            <NavLink  
-              to="/about">
-              About
-            </NavLink>
-          </li> */}
           <li>
             <NavLink              
               to="/projects"
@@ -51,22 +46,19 @@ export default function Header() {
             </NavLink>
           </li>
         </ul>
-        <HamburgerMenuIcon href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <HamburgerMenuIcon href="javascript:void(0);" className="icon" onClick={() => myFunction()}>
     <i class="fa fa-bars"></i>
   </HamburgerMenuIcon>
       </HeaderMainContainer>
     </>
+    
   );
+
+
+
 }
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+
 
 const HeaderMainContainer = styled.div`
 
@@ -91,10 +83,10 @@ const HeaderMainContainer = styled.div`
     padding-left: 0%;
     margin-left: 0%;
 
-    li {
+    /* li {
       @media (max-width: 768px) {
       display:none;
-    }
+    } */
 
 
       cursor: pointer;
@@ -150,6 +142,8 @@ const LogoImage = styled.img`
 const HamburgerMenuIcon = styled.a`
   color: green;
   padding: 20px 30px 0px 30px;
+  position: absolute;
+  right: 0;
 
   .icon {
     height: 120px;

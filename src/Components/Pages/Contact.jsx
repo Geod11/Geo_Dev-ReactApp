@@ -30,6 +30,7 @@ export default function Contact() {
     e.target.reset();
   }
 
+
   return (
     <>
       <ContactPageContent active={true}>
@@ -94,7 +95,7 @@ const ContactPageContent = styled.div`
   color: ${(p) => (p.active ? "white" : "green")};
 
 h2 {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
   textarea {
