@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Home from "./Components/Pages/Home";
-import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Skills from "./Components/Pages/Skills";
 import Projects from "./Components/Pages/Projects";
@@ -25,7 +24,6 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />

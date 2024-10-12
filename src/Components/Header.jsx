@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default function Header() {
 
   function myFunction() {
-    console.log("sdasdasd");
+  
     var x = document.getElementById("myLinks");
     if (!x) return
     if (x.style.display === "block") {
@@ -14,7 +14,7 @@ export default function Header() {
     } else {
       x.style.display = "block";
     }
-    console.log(x);
+   
   }
 
   return (
@@ -63,14 +63,20 @@ export default function Header() {
 const HeaderMainContainer = styled.div`
 
   display: flex;
-  max-height: 120px;
+  /* max-height: 120px; */
   font-size: 180%;
+  position:relative;
+
+  @media (max-width: 768px) {
+    display: inline-grid;
+    }
 
   ul {
 
     @media (max-width: 768px) {
       overflow: hidden;
       position: relative;
+      /* margin-top: 110px; */
     }
 
     font-family: KlaptArabic;
@@ -83,10 +89,11 @@ const HeaderMainContainer = styled.div`
     padding-left: 0%;
     margin-left: 0%;
 
-    /* li {
+    li {
       @media (max-width: 768px) {
-      display:none;
-    } */
+      /* display:none; */
+      
+       }
 
 
       cursor: pointer;
@@ -136,7 +143,7 @@ const HeaderMainContainer = styled.div`
 
 const LogoImage = styled.img`
           max-width: 120px;
-          max-height: 70px;  
+          max-height: 120px;  
           padding-top: 10px;    
 `
 const HamburgerMenuIcon = styled.a`

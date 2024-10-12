@@ -8,16 +8,33 @@ import styled from "styled-components";
 export default function Projects() {
   return (
     <>
-      <ProjectsPageContent></ProjectsPageContent>
+      <ProjectsPageContent>
+        <h1>Projects</h1>
+        <div>
+          <h2> Project 1 </h2>
+        </div>
+        <div>
+          <h2> Project 2 </h2>
+        </div>
+        <div>
+          <h2> Project 3 </h2>
+        </div>
+      </ProjectsPageContent>
     </>
   );
 }
 
 const ProjectsPageContent = styled.div`
-  color: green;
+  color: white;
   background-color: black;
   width: 100%;
   height: 100%;
+
+  h1 {
+    font-family: KlaptArabic;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 `;
 
 // const IndividualCard = styled.div`

@@ -33,7 +33,7 @@ export default function Footer() {
             ></img>
           </a>
         </li>
-        <li className="Footer-child-list">Phone: +40752675068</li>
+        <li className="Footer-child-list">Phone: +40 752 675 068</li>
         <li className="Footer-child-list">
           Email: georgedanilescu88@gmail.com
         </li>

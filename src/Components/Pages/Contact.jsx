@@ -34,7 +34,8 @@ export default function Contact() {
   return (
     <>
       <ContactPageContent active={true}>
-        <h2>Hello, nice to meet you!</h2>
+        <h1>Contact</h1>
+        <h2>Please fill out the form below</h2>
         <form ref={form} action="" onSubmit={sendEmail}>
           <div className="formWord">
             <input
@@ -93,6 +94,11 @@ const ContactPageContent = styled.div`
   font-size: 2vmin;
 
   color: ${(p) => (p.active ? "white" : "green")};
+
+  h1 {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
 
 h2 {
   padding-bottom: 40px;
